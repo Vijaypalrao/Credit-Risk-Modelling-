@@ -155,7 +155,7 @@ if predict_button:
     # MODEL PREDICTION
     # ---------------------------------------------
 
-    prediction = model.predict(new_customer)[0]
+    #prediction = model.predict(new_customer)[0]
 
     pd_new = model.predict_proba(new_customer)[0, 1]
 
@@ -188,7 +188,7 @@ if predict_button:
 
     st.subheader("Prediction Result")
 
-    st.success(f"Predicted Class : {prediction}")
+    #st.success(f"Predicted Class : {prediction}")
 
     st.info(f"Probability of Default : {pd_new:.2%}")
 
